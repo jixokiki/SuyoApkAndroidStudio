@@ -1,0 +1,87 @@
+<!-- cart_layout.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- TextView for Menu 1 -->
+    <TextView
+        android:id="@+id/textViewMenu1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu 1"
+        android:layout_marginTop="16dp"/>
+
+    <!-- TextView for Price 1 -->
+    <TextView
+        android:id="@+id/textViewPrice1"
+        android:layout_below="@id/textViewMenu1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Price 1"
+        android:layout_marginTop="8dp"/>
+
+    <!-- TextView for Menu 2 -->
+    <TextView
+        android:id="@+id/textViewMenu2"
+        android:layout_below="@id/textViewPrice1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu 2"
+        android:layout_marginTop="16dp"/>
+
+    <!-- TextView for Price 2 -->
+    <TextView
+        android:id="@+id/textViewPrice2"
+        android:layout_below="@id/textViewMenu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Price 2"
+        android:layout_marginTop="8dp"/>
+
+    <!-- TextView for Menu 3 -->
+    <TextView
+        android:id="@+id/textViewMenu3"
+        android:layout_below="@id/textViewPrice3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu 3"
+        android:layout_marginTop="-36dp"/>
+
+    <!-- TextView for Price 3 -->
+    <TextView
+        android:id="@+id/textViewPrice3"
+        android:layout_below="@id/textViewMenu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Price 3"
+        android:layout_marginTop="66dp"/>
+
+    <!-- TextView for Menu 4 -->
+    <TextView
+        android:id="@+id/textViewMenu4"
+        android:layout_below="@id/textViewPrice4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu 4"
+        android:layout_marginTop="-46dp"/>
+
+    <!-- TextView for Price 4 -->
+    <TextView
+        android:id="@+id/textViewPrice4"
+        android:layout_below="@id/textViewMenu3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Price 4"
+        android:layout_marginTop="46dp"/>
+
+    <Button
+        android:id="@+id/buttonPay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pay"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
+
+
+</RelativeLayout>

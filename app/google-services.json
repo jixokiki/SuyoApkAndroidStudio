@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "703791212193",
+    "firebase_url": "https://suyo-3df59-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "suyo-3df59",
+    "storage_bucket": "suyo-3df59.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:703791212193:android:ed53831c798438f946f2e0",
+        "android_client_info": {
+          "package_name": "com.example.suyo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAg3P3NSj1tXCgMMlrJZ6p4FJpuJ2kFRps"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

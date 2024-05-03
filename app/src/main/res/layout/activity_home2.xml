@@ -1,0 +1,177 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- di dalam layout ConstraintLayout -->
+
+    <!-- ImageView, TextView, dan Button untuk Menu 1 -->
+
+    <!-- ImageView untuk Menu 1 -->
+    <ImageView
+        android:id="@+id/imageMenu1"
+        android:layout_width="385dp"
+        android:layout_height="223dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/food1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- TextView untuk Nama Menu 1 -->
+    <TextView
+        android:id="@+id/textMenu1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="4dp"
+        android:text="Mie Kocok"
+        app:layout_constraintStart_toStartOf="@+id/imageMenu1"
+        app:layout_constraintTop_toBottomOf="@+id/imageMenu1" />
+
+    <!-- Button untuk Mengurangi Jumlah Menu 1 -->
+    <Button
+        android:id="@+id/btnMinusMenu1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="4dp"
+        android:onClick="onMinusButtonClick"
+        android:text="-"
+        app:layout_constraintStart_toStartOf="@+id/imageMenu1"
+        app:layout_constraintTop_toBottomOf="@+id/textMenu1" />
+
+    <!-- TextView untuk Menampilkan Jumlah Menu 1 -->
+    <TextView
+        android:id="@+id/quantityMenu1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:text="0"
+        app:layout_constraintStart_toEndOf="@+id/btnMinusMenu1"
+        app:layout_constraintTop_toBottomOf="@+id/textMenu1" />
+
+    <!-- Button untuk Menambah Jumlah Menu 1 -->
+
+    <!-- TextView untuk Menampilkan Harga Menu 1 -->
+    <Button
+        android:id="@+id/btnPlusMenu1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="4dp"
+        android:onClick="onPlusButtonClick"
+        android:text="+"
+        app:layout_constraintStart_toEndOf="@+id/quantityMenu1"
+        app:layout_constraintTop_toBottomOf="@+id/textMenu1" />
+
+    <TextView
+        android:id="@+id/priceMenu1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="12,000"
+        app:layout_constraintStart_toStartOf="@id/quantityMenu1"
+        app:layout_constraintTop_toBottomOf="@id/quantityMenu1" />
+
+    <!-- Guideline untuk Menyusun Harga Menu 1 -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineMenu1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <!-- ImageView, TextView, dan Button untuk Menu 2 -->
+
+    <!-- ImageView untuk Menu 2 -->
+    <ImageView
+        android:id="@+id/imageMenu2"
+        android:layout_width="385dp"
+        android:layout_height="223dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="332dp"
+        android:src="@drawable/food2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- TextView untuk Nama Menu 2 -->
+    <TextView
+        android:id="@+id/textMenu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="4dp"
+        android:text="Nasi Goreng Katsu"
+        app:layout_constraintStart_toStartOf="@+id/imageMenu2"
+        app:layout_constraintTop_toBottomOf="@+id/imageMenu2" />
+
+    <!-- Button untuk Mengurangi Jumlah Menu 2 -->
+    <Button
+        android:id="@+id/btnMinusMenu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="4dp"
+        android:onClick="onMinusButtonClick2"
+        android:text="-"
+        app:layout_constraintStart_toStartOf="@+id/imageMenu2"
+        app:layout_constraintTop_toBottomOf="@+id/textMenu2" />
+
+    <!-- TextView untuk Menampilkan Jumlah Menu 2 -->
+    <TextView
+        android:id="@+id/quantityMenu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:text="0"
+        app:layout_constraintStart_toEndOf="@+id/btnMinusMenu2"
+        app:layout_constraintTop_toBottomOf="@+id/textMenu2" />
+
+    <!-- Button untuk Menambah Jumlah Menu 2 -->
+
+    <!-- TextView untuk Menampilkan Harga Menu 2 -->
+    <Button
+        android:id="@+id/btnPlusMenu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="4dp"
+        android:onClick="onPlusButtonClick2"
+        android:text="+"
+        app:layout_constraintStart_toEndOf="@+id/quantityMenu2"
+        app:layout_constraintTop_toBottomOf="@+id/textMenu2" />
+
+    <TextView
+        android:id="@+id/priceMenu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="15,000"
+        app:layout_constraintStart_toStartOf="@id/quantityMenu2"
+        app:layout_constraintTop_toBottomOf="@id/quantityMenu2" />
+
+    <!-- Guideline untuk Menyusun Harga Menu 2 -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineMenu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <Button
+        android:id="@+id/btnAddToCartMenu1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="412dp"
+        android:onClick="onAddToCartClick"
+        android:text="Add to Cart"
+        app:layout_constraintStart_toStartOf="@+id/imageMenu1"
+        app:layout_constraintTop_toBottomOf="@+id/quantityMenu1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
